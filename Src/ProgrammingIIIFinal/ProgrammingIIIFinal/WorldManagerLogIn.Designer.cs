@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorldManagerLogIn));
             this.LblTitle = new System.Windows.Forms.Label();
             this.LbUserName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +52,7 @@
             // LbUserName
             // 
             this.LbUserName.AutoSize = true;
-            this.LbUserName.Location = new System.Drawing.Point(96, 90);
+            this.LbUserName.Location = new System.Drawing.Point(95, 80);
             this.LbUserName.Name = "LbUserName";
             this.LbUserName.Size = new System.Drawing.Size(61, 13);
             this.LbUserName.TabIndex = 1;
@@ -60,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 173);
+            this.label3.Location = new System.Drawing.Point(95, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 2;
@@ -68,14 +69,14 @@
             // 
             // TbUserName
             // 
-            this.TbUserName.Location = new System.Drawing.Point(99, 126);
+            this.TbUserName.Location = new System.Drawing.Point(98, 96);
             this.TbUserName.Name = "TbUserName";
             this.TbUserName.Size = new System.Drawing.Size(167, 20);
             this.TbUserName.TabIndex = 3;
             // 
             // TbPassword
             // 
-            this.TbPassword.Location = new System.Drawing.Point(99, 205);
+            this.TbPassword.Location = new System.Drawing.Point(98, 153);
             this.TbPassword.Name = "TbPassword";
             this.TbPassword.Size = new System.Drawing.Size(167, 20);
             this.TbPassword.TabIndex = 4;
@@ -83,9 +84,9 @@
             // BtnLogIn
             // 
             this.BtnLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogIn.Location = new System.Drawing.Point(63, 282);
+            this.BtnLogIn.Location = new System.Drawing.Point(63, 216);
             this.BtnLogIn.Name = "BtnLogIn";
-            this.BtnLogIn.Size = new System.Drawing.Size(234, 75);
+            this.BtnLogIn.Size = new System.Drawing.Size(234, 137);
             this.BtnLogIn.TabIndex = 5;
             this.BtnLogIn.Text = "Adventure Awaits!";
             this.BtnLogIn.UseVisualStyleBackColor = true;
@@ -101,6 +102,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LbUserName);
             this.Controls.Add(this.LblTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WorldManagerLogIn";
             this.Text = "World Manager Log-In";
             this.ResumeLayout(false);

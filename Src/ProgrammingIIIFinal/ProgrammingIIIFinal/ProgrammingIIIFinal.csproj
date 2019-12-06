@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SubForms\WorldManagerAmbientMusicPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerAmbientMusicPlayer.Designer.cs">
+      <DependentUpon>WorldManagerAmbientMusicPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerLandmarkCompendium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerLandmarkCompendium.Designer.cs">
+      <DependentUpon>WorldManagerLandmarkCompendium.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorldManagerLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorldManagerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldManagerMenu.Designer.cs">
+      <DependentUpon>WorldManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerPlayerInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerPlayerInformation.Designer.cs">
+      <DependentUpon>WorldManagerPlayerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerSpellCompendium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\WorldManagerSpellCompendium.Designer.cs">
+      <DependentUpon>WorldManagerSpellCompendium.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="WorldManagerLogIn.resx">
       <DependentUpon>WorldManagerLogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WorldManagerMenu.resx">
+      <DependentUpon>WorldManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
