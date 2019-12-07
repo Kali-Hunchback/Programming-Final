@@ -1,9 +1,0 @@
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\bin\Debug\ProgrammingIIIFinal.exe.config
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\bin\Debug\ProgrammingIIIFinal.exe
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\bin\Debug\ProgrammingIIIFinal.pdb
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.WorldManagerLogIn.resources
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.Properties.Resources.resources
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.WorldManagerMenu.resources
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.csproj.GenerateResource.cache
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.exe
-C:\Users\Shadz\source\repos\ProgrammingIIIFinal\ProgrammingIIIFinal\obj\Debug\ProgrammingIIIFinal.pdb
