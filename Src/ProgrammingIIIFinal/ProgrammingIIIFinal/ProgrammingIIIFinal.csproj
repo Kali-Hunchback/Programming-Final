@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.12.2.2\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,11 +55,11 @@
     <Compile Include="SubForms\WorldManagerAmbientMusicPlayer.Designer.cs">
       <DependentUpon>WorldManagerAmbientMusicPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\WorldManagerLandmarkCompendium.cs">
+    <Compile Include="SubForms\WorldManagerDiceRoller.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\WorldManagerLandmarkCompendium.Designer.cs">
-      <DependentUpon>WorldManagerLandmarkCompendium.cs</DependentUpon>
+    <Compile Include="SubForms\WorldManagerDiceRoller.Designer.cs">
+      <DependentUpon>WorldManagerDiceRoller.cs</DependentUpon>
     </Compile>
     <Compile Include="WorldManagerLogIn.cs">
       <SubType>Form</SubType>
@@ -84,6 +87,18 @@
     <Compile Include="SubForms\WorldManagerSpellCompendium.Designer.cs">
       <DependentUpon>WorldManagerSpellCompendium.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SubForms\WorldManagerAmbientMusicPlayer.resx">
+      <DependentUpon>WorldManagerAmbientMusicPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\WorldManagerDiceRoller.resx">
+      <DependentUpon>WorldManagerDiceRoller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\WorldManagerPlayerInformation.resx">
+      <DependentUpon>WorldManagerPlayerInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\WorldManagerSpellCompendium.resx">
+      <DependentUpon>WorldManagerSpellCompendium.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorldManagerLogIn.resx">
       <DependentUpon>WorldManagerLogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +114,7 @@
     <EmbeddedResource Include="WorldManagerMenu.resx">
       <DependentUpon>WorldManagerMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +127,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
