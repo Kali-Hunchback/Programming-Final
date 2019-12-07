@@ -2,10 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-*.lock
-*.ide
-*.ide-shm
-*.ide-wal
-*.sqlite
-*.suo
+/.vs/slnx.sqlite
+/.vs/Programming-Final/v16/.suo
+/ProgrammingIIIFinal/.vs/ProgrammingIIIFinal/v16/Server/sqlite3/db.lock
+/ProgrammingIIIFinal/.vs/ProgrammingIIIFinal/v16/Server/sqlite3/storage.ide
+/ProgrammingIIIFinal/.vs/ProgrammingIIIFinal/v16/Server/sqlite3/storage.ide-shm
+/ProgrammingIIIFinal/.vs/ProgrammingIIIFinal/v16/Server/sqlite3/storage.ide-wal
+/ProgrammingIIIFinal/.vs/ProgrammingIIIFinal/v16/.suo
 *.json
