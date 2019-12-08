@@ -70,6 +70,7 @@
             this.Controls.Add(this.DgvPlayers);
             this.Name = "WorldManagerPlayerInformation";
             this.Text = "WorldManagerPlayerInformation";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorldManagerPlayerInformation_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.DgvPlayers)).EndInit();
             this.ResumeLayout(false);
 

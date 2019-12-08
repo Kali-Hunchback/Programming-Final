@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorldManagerMenu));
             this.BtnLogOut = new System.Windows.Forms.Button();
             this.BtnMusicPlayer = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnPlayerInformation = new System.Windows.Forms.Button();
             this.BtnSpellReference = new System.Windows.Forms.Button();
             this.BtnDiceRoller = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,6 +44,7 @@
             this.BtnLogOut.TabIndex = 0;
             this.BtnLogOut.Text = "Log-Out";
             this.BtnLogOut.UseVisualStyleBackColor = true;
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // BtnMusicPlayer
             // 
@@ -54,16 +55,18 @@
             this.BtnMusicPlayer.TabIndex = 1;
             this.BtnMusicPlayer.Text = "Ambient Music Player";
             this.BtnMusicPlayer.UseVisualStyleBackColor = true;
+            this.BtnMusicPlayer.Click += new System.EventHandler(this.BtnMusicPlayer_Click);
             // 
-            // button3
+            // BtnPlayerInformation
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(18, 108);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(610, 90);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Player Information";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnPlayerInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPlayerInformation.Location = new System.Drawing.Point(18, 108);
+            this.BtnPlayerInformation.Name = "BtnPlayerInformation";
+            this.BtnPlayerInformation.Size = new System.Drawing.Size(610, 90);
+            this.BtnPlayerInformation.TabIndex = 2;
+            this.BtnPlayerInformation.Text = "Player Information";
+            this.BtnPlayerInformation.UseVisualStyleBackColor = true;
+            this.BtnPlayerInformation.Click += new System.EventHandler(this.BtnPlayerInformation_Click);
             // 
             // BtnSpellReference
             // 
@@ -74,6 +77,7 @@
             this.BtnSpellReference.TabIndex = 3;
             this.BtnSpellReference.Text = "Spell Compendium";
             this.BtnSpellReference.UseVisualStyleBackColor = true;
+            this.BtnSpellReference.Click += new System.EventHandler(this.BtnSpellReference_Click);
             // 
             // BtnDiceRoller
             // 
@@ -84,6 +88,7 @@
             this.BtnDiceRoller.TabIndex = 5;
             this.BtnDiceRoller.Text = "Dice Roller";
             this.BtnDiceRoller.UseVisualStyleBackColor = true;
+            this.BtnDiceRoller.Click += new System.EventHandler(this.BtnDiceRoller_Click);
             // 
             // WorldManagerMenu
             // 
@@ -92,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(635, 450);
             this.Controls.Add(this.BtnDiceRoller);
             this.Controls.Add(this.BtnSpellReference);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnPlayerInformation);
             this.Controls.Add(this.BtnMusicPlayer);
             this.Controls.Add(this.BtnLogOut);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -105,9 +110,9 @@
         #endregion
 
         private System.Windows.Forms.Button BtnLogOut;
-        private System.Windows.Forms.Button BtnMusicPlayer;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button BtnSpellReference;
-        private System.Windows.Forms.Button BtnDiceRoller;
+        internal System.Windows.Forms.Button BtnMusicPlayer;
+        internal System.Windows.Forms.Button BtnPlayerInformation;
+        internal System.Windows.Forms.Button BtnSpellReference;
+        internal System.Windows.Forms.Button BtnDiceRoller;
     }
 }

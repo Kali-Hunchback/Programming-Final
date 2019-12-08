@@ -30,11 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorldManagerLogIn));
             this.LblTitle = new System.Windows.Forms.Label();
-            this.LbUserName = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LblUserName = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
             this.TbUserName = new System.Windows.Forms.TextBox();
             this.TbPassword = new System.Windows.Forms.TextBox();
             this.BtnLogIn = new System.Windows.Forms.Button();
+            this.SSLogIn = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SSLogIn.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -49,23 +52,23 @@
             this.LblTitle.Text = "World Manager";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LbUserName
+            // LblUserName
             // 
-            this.LbUserName.AutoSize = true;
-            this.LbUserName.Location = new System.Drawing.Point(95, 80);
-            this.LbUserName.Name = "LbUserName";
-            this.LbUserName.Size = new System.Drawing.Size(61, 13);
-            this.LbUserName.TabIndex = 1;
-            this.LbUserName.Text = "Username: ";
+            this.LblUserName.AutoSize = true;
+            this.LblUserName.Location = new System.Drawing.Point(95, 80);
+            this.LblUserName.Name = "LblUserName";
+            this.LblUserName.Size = new System.Drawing.Size(61, 13);
+            this.LblUserName.TabIndex = 1;
+            this.LblUserName.Text = "Username: ";
             // 
-            // label3
+            // LblPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Location = new System.Drawing.Point(95, 137);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(53, 13);
+            this.LblPassword.TabIndex = 2;
+            this.LblPassword.Text = "Password";
             // 
             // TbUserName
             // 
@@ -90,21 +93,41 @@
             this.BtnLogIn.TabIndex = 5;
             this.BtnLogIn.Text = "Adventure Awaits!";
             this.BtnLogIn.UseVisualStyleBackColor = true;
+            this.BtnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
+            // 
+            // SSLogIn
+            // 
+            this.SSLogIn.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.SSLogIn.Location = new System.Drawing.Point(0, 388);
+            this.SSLogIn.Name = "SSLogIn";
+            this.SSLogIn.Size = new System.Drawing.Size(377, 22);
+            this.SSLogIn.TabIndex = 6;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(271, 17);
+            this.toolStripStatusLabel1.Text = "Welcome, Please Enter Your Information to Log-In";
+            this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // WorldManagerLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 410);
+            this.Controls.Add(this.SSLogIn);
             this.Controls.Add(this.BtnLogIn);
             this.Controls.Add(this.TbPassword);
             this.Controls.Add(this.TbUserName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.LbUserName);
+            this.Controls.Add(this.LblPassword);
+            this.Controls.Add(this.LblUserName);
             this.Controls.Add(this.LblTitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WorldManagerLogIn";
             this.Text = "World Manager Log-In";
+            this.SSLogIn.ResumeLayout(false);
+            this.SSLogIn.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,11 +136,13 @@
         #endregion
 
         private System.Windows.Forms.Label LblTitle;
-        private System.Windows.Forms.Label LbUserName;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TbUserName;
-        private System.Windows.Forms.TextBox TbPassword;
+        private System.Windows.Forms.Label LblUserName;
+        private System.Windows.Forms.Label LblPassword;
         private System.Windows.Forms.Button BtnLogIn;
+        private System.Windows.Forms.StatusStrip SSLogIn;
+        internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        internal System.Windows.Forms.TextBox TbUserName;
+        internal System.Windows.Forms.TextBox TbPassword;
     }
 }
 

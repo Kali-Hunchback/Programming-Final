@@ -12,9 +12,18 @@ namespace ProgrammingIIIFinal
 {
     public partial class WorldManagerPlayerInformation : Form
     {
-        public WorldManagerPlayerInformation()
+        private WorldManagerMenu parent;
+        public WorldManagerPlayerInformation(WorldManagerMenu parent)
         {
             InitializeComponent();
+            //Reference this form as a child of Menu on form load to enable button 
+            //activation in menu from this form
+            this.parent = parent;
+        }
+        //Enable related button when child form closes.
+        private void WorldManagerPlayerInformation_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parent.EnableButton(parent.BtnPlayerInformation);
         }
     }
 }

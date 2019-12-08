@@ -12,9 +12,16 @@ namespace ProgrammingIIIFinal
 {
     public partial class WorldManagerSpellCompendium : Form
     {
-        public WorldManagerSpellCompendium()
+        private WorldManagerMenu parent;
+        public WorldManagerSpellCompendium(WorldManagerMenu parent)
         {
             InitializeComponent();
+            this.parent = parent; 
+        }
+        //enable menu button on form close
+        private void WorldManagerSpellCompendium_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parent.EnableButton(parent.BtnSpellReference);
         }
     }
 }
