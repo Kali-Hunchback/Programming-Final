@@ -138,11 +138,11 @@
         private System.Windows.Forms.Label LblTitle;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Label LblPassword;
-        private System.Windows.Forms.TextBox TbUserName;
-        private System.Windows.Forms.TextBox TbPassword;
         private System.Windows.Forms.Button BtnLogIn;
         private System.Windows.Forms.StatusStrip SSLogIn;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        internal System.Windows.Forms.TextBox TbUserName;
+        internal System.Windows.Forms.TextBox TbPassword;
     }
 }
 

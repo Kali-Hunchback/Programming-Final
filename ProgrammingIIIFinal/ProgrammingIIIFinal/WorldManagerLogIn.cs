@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 
@@ -56,7 +50,7 @@ namespace ProgrammingIIIFinal
                 if (hashedLogIn.Equals("D6234DAF47D9A155CDF5FA8149928219DCFC442648B8007323C3675472EA4616"))
                 {
                     toolStripStatusLabel1.Text = "Access Allowed";
-                    WorldManagerMenu worldManagerMenu = new WorldManagerMenu();
+                    WorldManagerMenu worldManagerMenu = new WorldManagerMenu(this);
                     this.Hide();
                     worldManagerMenu.ShowDialog();
                 }

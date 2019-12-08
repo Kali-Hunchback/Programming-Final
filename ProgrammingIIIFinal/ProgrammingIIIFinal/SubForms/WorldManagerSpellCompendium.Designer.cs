@@ -241,6 +241,7 @@
             this.Controls.Add(this.LbSpellBox);
             this.Name = "WorldManagerSpellCompendium";
             this.Text = "WorldManagerSpellCompendium";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorldManagerSpellCompendium_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -71,6 +71,7 @@
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "WorldManagerAmbientMusicPlayer";
             this.Text = "WorldManagerAmbientMusicPlayer";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorldManagerAmbientMusicPlayer_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
