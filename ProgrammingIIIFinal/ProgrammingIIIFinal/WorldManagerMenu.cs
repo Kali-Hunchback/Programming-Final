@@ -1,12 +1,5 @@
 ﻿using ProgrammingIIIFinal.SubForms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProgrammingIIIFinal
@@ -21,7 +14,7 @@ namespace ProgrammingIIIFinal
         }
         //By setting access modifier of menu buttons to internal, we are able to access the buttons to be used as paramaters for the enable method button with
         //parent.BtnMusicPlayer (this is one example)
-        public void EnableButton(Button button) 
+        public void EnableButton(Button button)
         {
             button.Enabled = true;
         }
@@ -35,7 +28,7 @@ namespace ProgrammingIIIFinal
             worldManagerMusic.Owner = this;
             //Show the form (non-modal) this means that the user can still access the menu whilst using the music player.
             worldManagerMusic.Show();
-            
+
         }
 
         private void BtnPlayerInformation_Click(object sender, EventArgs e)

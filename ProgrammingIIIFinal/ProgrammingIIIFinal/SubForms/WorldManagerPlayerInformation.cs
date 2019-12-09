@@ -1,14 +1,8 @@
-﻿using System;
+﻿using CsvHelper;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CsvHelper;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ProgrammingIIIFinal
 {
@@ -28,7 +22,7 @@ namespace ProgrammingIIIFinal
             parent.EnableButton(parent.BtnPlayerInformation);
         }
 
-        
+
         private void BtnLoadInformation_Click(object sender, EventArgs e)
         {
             //Create OpenFileDialog which enables targetting an input directory

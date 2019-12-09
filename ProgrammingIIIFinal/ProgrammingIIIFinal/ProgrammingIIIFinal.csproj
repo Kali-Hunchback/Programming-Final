@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Player.cs" />
+    <Compile Include="Spell.cs" />
     <Compile Include="SubForms\WorldManagerAmbientMusicPlayer.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -48,20 +48,25 @@
             this.LblDescription = new System.Windows.Forms.Label();
             this.LblDuration = new System.Windows.Forms.Label();
             this.TbDuration = new System.Windows.Forms.TextBox();
+            this.BtnSortSpells = new System.Windows.Forms.Button();
+            this.BtnSearch = new System.Windows.Forms.Button();
+            this.TbSearch = new System.Windows.Forms.TextBox();
+            this.BtnAddSpell = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LbSpellBox
             // 
             this.LbSpellBox.FormattingEnabled = true;
-            this.LbSpellBox.Location = new System.Drawing.Point(13, 22);
+            this.LbSpellBox.Location = new System.Drawing.Point(13, 74);
             this.LbSpellBox.Name = "LbSpellBox";
-            this.LbSpellBox.Size = new System.Drawing.Size(291, 420);
+            this.LbSpellBox.Size = new System.Drawing.Size(291, 368);
             this.LbSpellBox.TabIndex = 0;
+            this.LbSpellBox.SelectedIndexChanged += new System.EventHandler(this.LbSpellBox_SelectedIndexChanged);
             // 
             // LblList
             // 
             this.LblList.AutoSize = true;
-            this.LblList.Location = new System.Drawing.Point(13, 3);
+            this.LblList.Location = new System.Drawing.Point(12, 58);
             this.LblList.Name = "LblList";
             this.LblList.Size = new System.Drawing.Size(49, 13);
             this.LblList.TabIndex = 1;
@@ -72,14 +77,14 @@
             this.TbName.Location = new System.Drawing.Point(351, 22);
             this.TbName.Name = "TbName";
             this.TbName.Size = new System.Drawing.Size(100, 20);
-            this.TbName.TabIndex = 2;
+            this.TbName.TabIndex = 1;
             // 
             // TbLevel
             // 
             this.TbLevel.Location = new System.Drawing.Point(476, 22);
             this.TbLevel.Name = "TbLevel";
             this.TbLevel.Size = new System.Drawing.Size(100, 20);
-            this.TbLevel.TabIndex = 3;
+            this.TbLevel.TabIndex = 2;
             // 
             // TbComponents
             // 
@@ -87,28 +92,28 @@
             this.TbComponents.Multiline = true;
             this.TbComponents.Name = "TbComponents";
             this.TbComponents.Size = new System.Drawing.Size(225, 79);
-            this.TbComponents.TabIndex = 4;
+            this.TbComponents.TabIndex = 6;
             // 
             // TbSchool
             // 
             this.TbSchool.Location = new System.Drawing.Point(351, 64);
             this.TbSchool.Name = "TbSchool";
             this.TbSchool.Size = new System.Drawing.Size(100, 20);
-            this.TbSchool.TabIndex = 5;
+            this.TbSchool.TabIndex = 3;
             // 
             // TbTime
             // 
             this.TbTime.Location = new System.Drawing.Point(476, 64);
             this.TbTime.Name = "TbTime";
             this.TbTime.Size = new System.Drawing.Size(100, 20);
-            this.TbTime.TabIndex = 6;
+            this.TbTime.TabIndex = 4;
             // 
             // TbRange
             // 
             this.TbRange.Location = new System.Drawing.Point(415, 109);
             this.TbRange.Name = "TbRange";
             this.TbRange.Size = new System.Drawing.Size(100, 20);
-            this.TbRange.TabIndex = 7;
+            this.TbRange.TabIndex = 5;
             // 
             // TbAvailableClass
             // 
@@ -116,15 +121,15 @@
             this.TbAvailableClass.Multiline = true;
             this.TbAvailableClass.Name = "TbAvailableClass";
             this.TbAvailableClass.Size = new System.Drawing.Size(240, 41);
-            this.TbAvailableClass.TabIndex = 7;
+            this.TbAvailableClass.TabIndex = 8;
             // 
             // TbDescription
             // 
             this.TbDescription.Location = new System.Drawing.Point(351, 309);
             this.TbDescription.Multiline = true;
             this.TbDescription.Name = "TbDescription";
-            this.TbDescription.Size = new System.Drawing.Size(437, 129);
-            this.TbDescription.TabIndex = 8;
+            this.TbDescription.Size = new System.Drawing.Size(437, 133);
+            this.TbDescription.TabIndex = 9;
             // 
             // LblName
             // 
@@ -214,15 +219,56 @@
             this.TbDuration.Size = new System.Drawing.Size(100, 20);
             this.TbDuration.TabIndex = 7;
             // 
+            // BtnSortSpells
+            // 
+            this.BtnSortSpells.Location = new System.Drawing.Point(76, 41);
+            this.BtnSortSpells.Name = "BtnSortSpells";
+            this.BtnSortSpells.Size = new System.Drawing.Size(104, 30);
+            this.BtnSortSpells.TabIndex = 9;
+            this.BtnSortSpells.Text = "Sort Spell List";
+            this.BtnSortSpells.UseVisualStyleBackColor = true;
+            this.BtnSortSpells.Click += new System.EventHandler(this.BtnSortSpells_Click);
+            // 
+            // BtnSearch
+            // 
+            this.BtnSearch.Location = new System.Drawing.Point(186, 41);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(104, 30);
+            this.BtnSearch.TabIndex = 9;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+            // 
+            // TbSearch
+            // 
+            this.TbSearch.Location = new System.Drawing.Point(163, 15);
+            this.TbSearch.Name = "TbSearch";
+            this.TbSearch.Size = new System.Drawing.Size(153, 20);
+            this.TbSearch.TabIndex = 0;
+            // 
+            // BtnAddSpell
+            // 
+            this.BtnAddSpell.Location = new System.Drawing.Point(682, 93);
+            this.BtnAddSpell.Name = "BtnAddSpell";
+            this.BtnAddSpell.Size = new System.Drawing.Size(106, 59);
+            this.BtnAddSpell.TabIndex = 10;
+            this.BtnAddSpell.Text = "Add Spell";
+            this.BtnAddSpell.UseVisualStyleBackColor = true;
+            this.BtnAddSpell.Click += new System.EventHandler(this.BtnAddSpell_Click);
+            // 
             // WorldManagerSpellCompendium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnAddSpell);
+            this.Controls.Add(this.BtnSearch);
+            this.Controls.Add(this.BtnSortSpells);
             this.Controls.Add(this.TbDescription);
             this.Controls.Add(this.TbDuration);
             this.Controls.Add(this.TbAvailableClass);
             this.Controls.Add(this.TbRange);
+            this.Controls.Add(this.TbSearch);
             this.Controls.Add(this.TbTime);
             this.Controls.Add(this.TbSchool);
             this.Controls.Add(this.TbComponents);
@@ -241,7 +287,9 @@
             this.Controls.Add(this.LbSpellBox);
             this.Name = "WorldManagerSpellCompendium";
             this.Text = "WorldManagerSpellCompendium";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WorldManagerSpellCompendium_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorldManagerSpellCompendium_FormClosed);
+            this.Load += new System.EventHandler(this.WorldManagerSpellCompendium_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +317,9 @@
         private System.Windows.Forms.Label LblDescription;
         private System.Windows.Forms.Label LblDuration;
         private System.Windows.Forms.TextBox TbDuration;
+        private System.Windows.Forms.Button BtnSortSpells;
+        private System.Windows.Forms.Button BtnSearch;
+        private System.Windows.Forms.TextBox TbSearch;
+        private System.Windows.Forms.Button BtnAddSpell;
     }
 }
