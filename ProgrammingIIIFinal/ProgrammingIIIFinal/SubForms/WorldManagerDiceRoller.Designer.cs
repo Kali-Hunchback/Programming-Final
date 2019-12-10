@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TbD2 = new System.Windows.Forms.TextBox();
+            this.TbD6 = new System.Windows.Forms.TextBox();
+            this.TbD8 = new System.Windows.Forms.TextBox();
+            this.TbD10 = new System.Windows.Forms.TextBox();
+            this.TbD12 = new System.Windows.Forms.TextBox();
+            this.TbD20 = new System.Windows.Forms.TextBox();
+            this.TbD100 = new System.Windows.Forms.TextBox();
             this.BtnD4 = new System.Windows.Forms.Button();
             this.BtnD6 = new System.Windows.Forms.Button();
             this.BtnD8 = new System.Windows.Forms.Button();
@@ -46,54 +46,54 @@
             this.LblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TbD2
             // 
-            this.textBox1.Location = new System.Drawing.Point(305, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.TbD2.Location = new System.Drawing.Point(305, 43);
+            this.TbD2.Name = "TbD2";
+            this.TbD2.Size = new System.Drawing.Size(100, 20);
+            this.TbD2.TabIndex = 0;
             // 
-            // textBox2
+            // TbD6
             // 
-            this.textBox2.Location = new System.Drawing.Point(305, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.TbD6.Location = new System.Drawing.Point(305, 82);
+            this.TbD6.Name = "TbD6";
+            this.TbD6.Size = new System.Drawing.Size(100, 20);
+            this.TbD6.TabIndex = 0;
             // 
-            // textBox3
+            // TbD8
             // 
-            this.textBox3.Location = new System.Drawing.Point(305, 121);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
+            this.TbD8.Location = new System.Drawing.Point(305, 121);
+            this.TbD8.Name = "TbD8";
+            this.TbD8.Size = new System.Drawing.Size(100, 20);
+            this.TbD8.TabIndex = 0;
             // 
-            // textBox4
+            // TbD10
             // 
-            this.textBox4.Location = new System.Drawing.Point(305, 156);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 0;
+            this.TbD10.Location = new System.Drawing.Point(305, 156);
+            this.TbD10.Name = "TbD10";
+            this.TbD10.Size = new System.Drawing.Size(100, 20);
+            this.TbD10.TabIndex = 0;
             // 
-            // textBox5
+            // TbD12
             // 
-            this.textBox5.Location = new System.Drawing.Point(305, 191);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 0;
+            this.TbD12.Location = new System.Drawing.Point(305, 191);
+            this.TbD12.Name = "TbD12";
+            this.TbD12.Size = new System.Drawing.Size(100, 20);
+            this.TbD12.TabIndex = 0;
             // 
-            // textBox6
+            // TbD20
             // 
-            this.textBox6.Location = new System.Drawing.Point(305, 226);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 0;
+            this.TbD20.Location = new System.Drawing.Point(305, 226);
+            this.TbD20.Name = "TbD20";
+            this.TbD20.Size = new System.Drawing.Size(100, 20);
+            this.TbD20.TabIndex = 0;
             // 
-            // textBox7
+            // TbD100
             // 
-            this.textBox7.Location = new System.Drawing.Point(305, 262);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 0;
+            this.TbD100.Location = new System.Drawing.Point(305, 262);
+            this.TbD100.Name = "TbD100";
+            this.TbD100.Size = new System.Drawing.Size(100, 20);
+            this.TbD100.TabIndex = 0;
             // 
             // BtnD4
             // 
@@ -104,6 +104,7 @@
             this.BtnD4.TabIndex = 1;
             this.BtnD4.Text = "D4";
             this.BtnD4.UseVisualStyleBackColor = true;
+            this.BtnD4.Click += new System.EventHandler(this.BtnD4_Click);
             // 
             // BtnD6
             // 
@@ -115,6 +116,7 @@
             this.BtnD6.TabIndex = 1;
             this.BtnD6.Text = "D6";
             this.BtnD6.UseVisualStyleBackColor = true;
+            this.BtnD6.Click += new System.EventHandler(this.BtnD6_Click);
             // 
             // BtnD8
             // 
@@ -126,6 +128,7 @@
             this.BtnD8.TabIndex = 1;
             this.BtnD8.Text = "D8";
             this.BtnD8.UseVisualStyleBackColor = true;
+            this.BtnD8.Click += new System.EventHandler(this.BtnD8_Click);
             // 
             // BtnD10
             // 
@@ -137,6 +140,7 @@
             this.BtnD10.TabIndex = 1;
             this.BtnD10.Text = "D10";
             this.BtnD10.UseVisualStyleBackColor = true;
+            this.BtnD10.Click += new System.EventHandler(this.BtnD10_Click);
             // 
             // BtnD12
             // 
@@ -148,6 +152,7 @@
             this.BtnD12.TabIndex = 1;
             this.BtnD12.Text = "D12";
             this.BtnD12.UseVisualStyleBackColor = true;
+            this.BtnD12.Click += new System.EventHandler(this.BtnD12_Click);
             // 
             // BtnD20
             // 
@@ -159,6 +164,7 @@
             this.BtnD20.TabIndex = 1;
             this.BtnD20.Text = "D20";
             this.BtnD20.UseVisualStyleBackColor = true;
+            this.BtnD20.Click += new System.EventHandler(this.BtnD20_Click);
             // 
             // BtnD100
             // 
@@ -170,6 +176,7 @@
             this.BtnD100.TabIndex = 1;
             this.BtnD100.Text = "D100";
             this.BtnD100.UseVisualStyleBackColor = true;
+            this.BtnD100.Click += new System.EventHandler(this.BtnD100_Click);
             // 
             // LblSelection
             // 
@@ -203,13 +210,13 @@
             this.Controls.Add(this.BtnD8);
             this.Controls.Add(this.BtnD6);
             this.Controls.Add(this.BtnD4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TbD100);
+            this.Controls.Add(this.TbD20);
+            this.Controls.Add(this.TbD12);
+            this.Controls.Add(this.TbD10);
+            this.Controls.Add(this.TbD8);
+            this.Controls.Add(this.TbD6);
+            this.Controls.Add(this.TbD2);
             this.Name = "WorldManagerDiceRoller";
             this.Text = "WorldManagerDiceRoller";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorldManagerDiceRoller_FormClosed);
@@ -220,13 +227,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TbD2;
+        private System.Windows.Forms.TextBox TbD6;
+        private System.Windows.Forms.TextBox TbD8;
+        private System.Windows.Forms.TextBox TbD10;
+        private System.Windows.Forms.TextBox TbD12;
+        private System.Windows.Forms.TextBox TbD20;
+        private System.Windows.Forms.TextBox TbD100;
         private System.Windows.Forms.Button BtnD4;
         private System.Windows.Forms.Button BtnD6;
         private System.Windows.Forms.Button BtnD8;
