@@ -64,19 +64,36 @@ namespace ProgrammingIIIFinal
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(TbSearch.Text)) 
+            {
+                MessageBox.Show("Please enter a spell name as a search term", "ERROR", MessageBoxButtons.OK);
+            } 
+            for (int i = 0; i < spellList.Count;) 
+            {
+                if (LbSpellBox.Items[i].Equals(TbSearch.Text))
+                {
+                    LbSpellBox.SelectedIndex = i;
+                    break;
+                }
+                else if (!LbSpellBox.Items[i].Equals(TbSearch.Text))
+                {
+                    i++;
+                }
+                else
+                {
+                    MessageBox.Show("Item was not found", "Issue!", MessageBoxButtons.OK);
+                }
+            }
         }
 
         private void BtnSortSpells_Click(object sender, EventArgs e)
         {
-            /*spellList.Sort();
+            spellList.Sort();
             LbSpellBox.Items.Clear();
             foreach (Spell s in spellList) 
             {
               LbSpellBox.Items.Add(s.ToString());
-            }*/
-
-
+            }
         }
 
         private void LbSpellBox_SelectedIndexChanged(object sender, EventArgs e)
