@@ -10,6 +10,7 @@ namespace ProgrammingIIIFinal
         
         //File destination for read write functions
         string spellBinary = "spells.dat";
+        //Parent form
         private WorldManagerMenu parent;
         public WorldManagerSpellCompendium(WorldManagerMenu parent)
         {
@@ -61,7 +62,7 @@ namespace ProgrammingIIIFinal
                 spellList.Add(newSpell);
             }
         }
-
+        //Search for spell inside of spellbox, if an equals match is found true, then the index of the item searched will be the new selected index. 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(TbSearch.Text)) 
@@ -85,7 +86,7 @@ namespace ProgrammingIIIFinal
                 }
             }
         }
-
+        //Sorts the spells using list.Sort with a CompareTo method which is over-ridden inside of Spell.cs
         private void BtnSortSpells_Click(object sender, EventArgs e)
         {
             spellList.Sort();
@@ -95,7 +96,7 @@ namespace ProgrammingIIIFinal
               LbSpellBox.Items.Add(s.ToString());
             }
         }
-
+        //When the index in the lost box if selected, expand the objects information into the text boxes
         private void LbSpellBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //instantiate object class
@@ -120,7 +121,7 @@ namespace ProgrammingIIIFinal
                 TbDescription.Text = spellList[index].spellDescription;
             }
         }
-
+        //Save files when the form is closing, write all spell information 
         private void WorldManagerSpellCompendium_FormClosing(object sender, FormClosingEventArgs e)
         {
             //stores spells in spell.dat.
@@ -149,7 +150,7 @@ namespace ProgrammingIIIFinal
                 MessageBox.Show("There was an issue writing to the spell list" + ex);
             }
         }
-
+        //When the file is loaded, the .dat file is read into the List Data structure and the list box
         private void WorldManagerSpellCompendium_Load(object sender, EventArgs e)
         {
             //Load spell binary file created on form close from first run
