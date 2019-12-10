@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ProgrammingIIIFinal
 {
@@ -29,10 +29,10 @@ namespace ProgrammingIIIFinal
 
         //Display method for song, copies information from the LinkedList<string>,
         //populates the LbSongList element using a foreach loop after clearing it's items.
-        public void DisplaySongs() 
+        public void DisplaySongs()
         {
             LbSongs.Items.Clear();
-            foreach (string path in songList) 
+            foreach (string path in songList)
             {
                 LbSongs.Items.Add(path);
             }
